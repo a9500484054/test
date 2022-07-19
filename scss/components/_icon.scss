@@ -1,0 +1,44 @@
+.arrow {
+    position: relative;
+    &::after {
+        content: "";
+
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        display: block;
+        width: 8px;
+        height: 4px;
+        
+        background-image: url('../images/svg/su-arrow.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &:first-child {
+        &::after {
+            top: 25px;
+        }
+
+    }
+}
+
+.ok {
+    position: relative;
+    &::after {
+        content: "";
+
+        position: absolute;
+        right: 10px;
+        top: 23px;
+
+        display: block;
+        width: 11px;
+        height: 8px;
+        
+        background-image: url('../images/svg/su-ok.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/min-main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+<body>
+    <!-- Секция su-form -->
+    <section class="su-form">
+
+        <!-- боковая колонка  -->
+        <div class="sidebar su-form__sidebar">
+            <span class="sidebar__elem">Sign up</span>
+        </div>
+
+        <!-- Главная коробка с формой  -->
+        <div class="su-form__main-box">
+
+            <!-- Заголовок  -->
+            <h2 class="title su-form__title">New user?</h2>
+            <p class="subtitle su-form__subtitle">Use the form below to create your account.</p>
+            
+            <!-- Начало Формы  -->
+            <form action="#" class="login-form su-form__main-form" id="login-form">
+
+                <!-- Блок Имя и Фамилия -->
+                <div class="login-form__row">
+
+                    <!-- Имя -->
+                    <label class="login-form__label">
+                        <span class="login-form__title">First Name</span>
+                        <input class="login-form__input" name="firstname" type="text" placeholder="Alice">                
+                    </label>
+
+                    <!-- Фамилия -->
+                    <label class="login-form__label">
+                        <span class="login-form__title">Last Name</span>
+                        <input class="login-form__input" name="lastname" type="text" placeholder="Miller">                
+                    </label>
+
+                </div>
+
+                <!-- Блок Национальность и Почта -->
+                <div class="login-form__row">
+
+                    <!-- Национальность -->
+                    <label class="login-form__label arrow">
+                        <span class="login-form__title">Nationality</span>
+                        <select name="nationality" class="login-form__select">
+                            <option value="American" selected>American</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Ukraine">Ukraine</option>
+                        </select>                
+                    </label>
+
+                    <!-- Почта -->
+                    <label class="login-form__label">
+                        <span class="login-form__title">E-mail</span>
+                        <input class="login-form__input" name="email" type="email" placeholder="alice.miller@yahoo.com">                
+                    </label>
+
+                </div>
+
+                <!-- Блок Дата рождения и Пол  -->
+                <div class="login-form__row">
+
+                    <!-- Дата рождения  -->
+                    <div class="login-form__label">
+                        <span class="login-form__title">Date of Birth</span>
+
+                        <!-- Обертка для Даты Рождения  -->
+                        <div class="login-form__b-day-wrap">
+                            
+                            <!-- Дата -->
+                            <select name="data" class="login-form__select login-form__select--day">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                            <i class="arrow"></i>
+
+                            <!-- Месяц -->
+                            <select name="mount" class="login-form__select login-form__select--mount">
+                                <option value="December" selected>December</option>
+                                <option value="January">January </option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                            </select>
+                            <i class="arrow"></i>
+
+                            <!-- Год -->
+                            <select name="year" class="login-form__select login-form__select--year">
+                                <option value="1995" selected>1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                            </select> 
+                            <i class="arrow"></i>
+
+                        </div>
+                    </div>
+
+                    <!-- Выбор Пола  -->
+                    <div class="login-form__label">
+                        <span class="login-form__title">Gender</span>
+                        
+                        <!-- Обертка Выбора Пола  -->
+                        <div class="login-form__gender-wrap">
+
+                            <!-- Мужской  -->
+                            <label class="login-form__gender-label">
+                                <input class="login-form__radio" type="radio" name="gender" value="Male" checked>
+                                <span class="login-form__radio-elem"></span>
+                                <span class="login-form__radio-text">Male</span>
+                            </label>
+
+                            <!-- Женский -->
+                            <label class="login-form__gender-label">
+                                <input class="login-form__radio" type="radio" name="gender"  value="Female">
+                                <span class="login-form__radio-elem"></span>
+                                <span class="login-form__radio-text">Female</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Блок Пароля  -->
+                <div class="login-form__row">
+
+                    <!-- Пароль  -->
+                    <label class="login-form__label">
+                        <span class="login-form__title">Password</span>
+                        <input class="login-form__input" name="password" type="password">               
+                    </label>
+
+                    <!-- Проверка Пароля  -->
+                    <label class="login-form__label">
+                        <span class="login-form__title">Confirm Password</span>
+                        <input class="login-form__input" name="confirmpassword" type="password" >              
+                    </label>
+
+                </div>
+
+                <!-- Блок Логин и  Отправить  -->
+                <div class="login-form__row">
+
+                    <!-- Логин -->
+                    <p class="login-form__login">Have an account? <a class="login-form__link" href="#">Login</a></p>
+                    
+                    <!-- Отправить  -->
+                    <button type="submit" class="login-form__btn-send shiver">Complete Signup</button>
+                </div>
+
+            </form>
+
+            <!-- Модальное окон -->
+            <div class="overlay">
+                <h2 class="title overlay__title">Thank You!</h2>
+                <p class="subtitle overlay__subtitle">you registered</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/min-main.js"></script>
+</body>
+</html>
