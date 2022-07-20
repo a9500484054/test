@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmPassword = document.querySelector("input[name='confirmpassword']")
     const login = document.querySelector(".login-form__login")
     const goodsend = document.querySelector(".overlay")
-    const block = document.querySelectorAll('.su-form__wrap')
+    const block = document.querySelectorAll('.login-form__row')
 
     // Анимированное появления элементов формы
     // Скрываем элементы
@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             login.classList.remove('error-text--send-filling')
 
             if(document.querySelector('.error') === null) {
+                
                 login.classList.remove('error-text--send')
                 applicantForm.reset()
                 goodsend.style.display ="block"
